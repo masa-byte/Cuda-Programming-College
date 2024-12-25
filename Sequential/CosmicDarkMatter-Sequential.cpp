@@ -95,9 +95,9 @@ void printHistogram(unsigned int *histogramBins, int n, string path)
 int main()
 {
 	// Files
-	ifstream realData("C:/Users/masac/OneDrive/Desktop/Masa/College/GPU Programming/real-galaxies.txt");
-	ifstream randomData("C:/Users/masac/OneDrive/Desktop/Masa/College/GPU Programming/random-galaxies.txt");
-	ofstream omegaFile("C:/Users/masac/OneDrive/Desktop/Masa/College/GPU Programming/omega.txt");
+	ifstream realData("real-galaxies.txt");
+	ifstream randomData("random-galaxies.txt");
+	ofstream omegaFile("omega.txt");
 
 	// File opening check
 	if (!realData.is_open() || !randomData.is_open() || !omegaFile.is_open())
@@ -145,13 +145,13 @@ int main()
 
 	// Print the histograms
 	cout << "histogramDD Histogram:" << endl;
-	printHistogram(histogramDD, n, "C:/Users/masac/OneDrive/Desktop/Masa/College/GPU Programming/histogramDD.txt");
+	printHistogram(histogramDD, n, "histogramDD.txt");
 
 	cout << "histogramDR Histogram:" << endl;
-	printHistogram(histogramDR, n, "C:/Users/masac/OneDrive/Desktop/Masa/College/GPU Programming/histogramDR.txt");
+	printHistogram(histogramDR, n, "histogramDR.txt");
 
 	cout << "histogramRR Histogram:" << endl;
-	printHistogram(histogramRR, n, "C:/Users/masac/OneDrive/Desktop/Masa/College/GPU Programming/histogramRR.txt");
+	printHistogram(histogramRR, n, "histogramRR.txt");
 
 	// Calculating omega values
 	float *omega = new float[TOTAL_BINS];
