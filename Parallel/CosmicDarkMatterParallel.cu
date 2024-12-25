@@ -198,13 +198,13 @@ int main(int argc, char *argv[])
 
     // Print the histograms
     cout << "Histogram DR" << endl;
-    printHistogram(histogramDR, histogramDRsum, n, "dr.txt");
+    printHistogram(histogramDR, histogramDRsum, n, "histogramDR.txt");
 
     cout << "Histogram DD" << endl;
-    printHistogram(histogramDD, histogramDDsum, n, "dd.txt");
+    printHistogram(histogramDD, histogramDDsum, n, "histogramDD.txt");
 
     cout << "Histogram RR" << endl;
-    printHistogram(histogramRR, histogramRRsum, n, "rr.txt");
+    printHistogram(histogramRR, histogramRRsum, n, "histogramRR.txt");
 
     // Calculate omega values on the CPU
     for (int i = 0; i < TOTAL_BINS; i++)
